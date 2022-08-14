@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+#header {
+    background: rgba(0, 0, 0, 0.211);
+   position: fixed;
+   width: 100%;
+    padding: 20px 40px;
+    z-index: 1000;
+}
+
+#header .header__all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 160px;
+    height: 37px;
+}
+
+
+#header .nav__bar a{
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+#header a{
+    color: #fff;
+}
+
+#header .nav__bar .book {
+    border-radius: 30px;
+    background-color: #BA71DA;
+    padding: 10px 26px;
+}
+
+#first {
+    background-image: url(..//img/parallax-2.jpg);
+    background-position: center;
+    text-decoration: none;
+    padding: 14rem;
+    text-align: center;
+
+}
+
+#first h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold;
+}
+
+#first h2{
+    font-size: 20px;
+    color: #fff;
+    margin: 30px 0 50px 0;
+}
+
+#first .search .btn {
+    width: 40%;
+    background-color: #fff;
+    margin: 0px auto;
+    padding: 16px 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}    
+
+#first .search .btn select, button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+option {
+    width: 40%;
+}
+
+#first .search .btn select {
+    margin-right: 10px;
+}
+
+#first .forms {
+   font-size: 20px;
+}
+
+#first .all__box {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 0;
+}
+
+#first .all__box img {
+    width: 40%;
+    margin-bottom: 5px;
+}
+
+#first .all__box .box {
+    width: 23%;
+    background-color: rgba(0, 0, 0, 0.211);
+    opacity: 0.8;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.all__box .box p {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#first .all__box .box a {
+    text-decoration: none;
+}
+
+#second {
+    padding: 5rem 200px;
+
+}
+
+#second .text {
+    text-align: center;
+}
+
+#second .text h2 {
+    font-size: 14px;
+    color: #9a9a9a;
+    margin-bottom: 10px;
+}
+
+#second .text p { 
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#second .packages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;;
+}
+
+#second .packages .box {
+    width: 32%;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+#second .packages .box img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+#second .box .box__text {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: #fff;
+    font-weight: 900;
+}
+
+#second .packages .box .package__icon {
+    width: 35px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+#second .box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #14B9D5;
+    z-index: 1;
+    opacity: 0;
+    transition: 1s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.overlay__text  {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+
+.overlay a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.overlay .destination {
+    border-radius: 30px;
+    background-color: #fff;
+    padding: 8px 12px;
+    margin-top: 20px;
+    color: black;
+}
+
+#second .packages .box:hover .overlay {
+    opacity: 1;
+}
+
+.overlay__text h2 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
